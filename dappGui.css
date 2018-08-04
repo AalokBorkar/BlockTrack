@@ -1,0 +1,26 @@
+body{
+	font-family: 'Crete Round', serif;
+}
+
+h1{
+	font-size: 40px;
+}
+
+input{
+	display: block;
+	margin: 0 auto;
+}
+
+.titles{
+	text-align: center;
+}
+
+.interactive{
+	width: 350px;
+	background-color: rgba(173,216,230, .6);
+	border: solid 2px
+	border-color: blue;
+	padding: .3%;
+	padding-bottom: 2%;
+	margin: 3%;
+}
