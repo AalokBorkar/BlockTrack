@@ -1,5 +1,16 @@
 body{
+	text-align: center;
 	font-family: 'Crete Round', serif;
+	background-color: #2F2FA2;
+	color: white;
+}
+	#title{
+		font-size: 45px;
+	}
+
+#interact{
+	margin: auto;
+	margin-top: 2%;
 }
 
 h1{
@@ -7,20 +18,137 @@ h1{
 }
 
 input{
-	display: block;
-	margin: 0 auto;
+	text-align:center;
+	margin-bottom: 5%;
+	font-size: 15px;
+	text-align: left;
+	width: 55%;
 }
+	.submit{
+		position: relative;
+		bottom: 7px;	
+	}
+		textarea{
+			margin-bottom: 5%;
+			width: 55%;
+		}
 
 .titles{
 	text-align: center;
+	position: relative;
+	top: -13px;
 }
 
 .interactive{
-	width: 350px;
-	background-color: rgba(173,216,230, .6);
+	color: black;
+	width: 550px;
+	background-color: rgba(246,76,114, .90);
 	border: solid 2px
 	border-color: blue;
 	padding: .3%;
-	padding-bottom: 2%;
-	margin: 3%;
+	padding-bottom: 1.5%;
+	margin: 3% auto;
+}
+.input-errors{
+	color: #EE7600;
+	font-family: Times New Roman Header;
+	font-size: 15px; 
+}
+
+.orange{
+  background-color : orange; 
+}
+
+.descriptor{
+	font-size: 15px;
+}
+
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: #17954c;
+	cursor: pointer;
+	padding: 15px 40px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 60%;
+}
+
+/* Pseudo elements for icons */
+.btn:before{
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+/* Button 4 */
+.'btn-4' {
+	border-radius: 50px;
+	border: 3px solid #fff;
+	color: #fff;
+	overflow: hidden;
+}
+
+.btn-4:active {
+	border-color: #17954c;
+	color: #17954c;
+}
+
+.btn-4:hover {
+	background: #24b662;
+}
+
+.btn-4:before {
+	position: absolute;
+	height: 100%;
+	font-size: 125%;
+	line-height: 3.5;
+	color: #fff;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-4:active:before {
+	color: #17954c;
+}
+
+/* Button 4c */
+.btn-4c:before {
+	left: 70%;
+	opacity: 0;
+	top: 0;
+}
+
+.btn-4c:hover:before {
+	left: 80%;
+	opacity: 1;
+}
+.icon-arrow-right:before {
+	content: "🡒";
+	top: -15px;
 }

@@ -1,31 +1,16 @@
-pragma solidity ^0.4.4;
+pragma solidity ^0.4.24;
 
 contract Logistics{
-    
-    address public owner;
-    mapping(address => string) notes;
-    
-    modifier onlyOwner() {
+    address public owner = msg.sender;
+    mapping(address => string) public notes;
+
+    function sign(string note) public {
         require(msg.sender == owner);
-        _;
-    }
-    
-    constructor(address genesis) public {
-       owner = genesis;
-    }
-    
-    function sign(string signedNote) public onlyOwner{
-            notes[owner] = signedNote; //gaurenteed that msg.sender == owner
-    }
-    
-    function transferOwnership(address nuOwner) onlyOwner {
-        owner = nuOwner;
+        notes[owner] = note;
     }
 
-    function viewNotes(address participant) public returns(string){ // signed note on success nothing on fail
-        if(notes[participant] !== 0){
-            return (notes(participant));   
-        }
+    function transferOwnership(address newOwner) public {
+        require(msg.sender == owner);
+        owner = newOwner;
     }
-
 }

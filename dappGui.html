@@ -1,11 +1,13 @@
  <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="utf-8"/>
 		<script src="jquery-3.3.1.js"></script>
-		<script src="dappGui.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+		<script src="dappGui.js"></script>
 		<link rel="stylesheet" type="text/css" href="dappGui.css">
 		<link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet"> 
+
 	</head>
 
 	<body>
@@ -21,17 +23,25 @@
 
 			<div class = 'interactive' id = 'view'>
 				<p class = 'titles' id = 'viewText'> View the notes of an address </p>
+				<!-- <p class = 'descriptor'>View the signed note of any previous holder on the ledger</p> -->
 				<input id = 'viewInput' type="text" placeholder="Address goes here" ></input>
+				<button class = 'submit btn btn-4 btn-4c icon-arrow-right' id = 'viewButton'>View</button>
+				<p class = 'input-errors' id = 'view-input-error'> You must input an address before viewing! </p>
+
 			</div>
 
 			<div class = 'interactive' id = 'sign'>
 				<p class = 'titles' id = 'signText'> Sign the ledger </p>
-				<input id = 'signInput' type="text" placeholder="BCash Rox!" ></input>
+				<textarea id = 'signInput' type="text" placeholder="BCash Rox! \n\n -Vitalik" ></textarea>
+				<button class = 'submit btn btn-4 btn-4c icon-arrow-right' id = 'signButton'>Sign</button>
+				<p class = 'input-errors' id = 'sign-input-error'> You must input text to sign! </p>
 			</div>
 
 			<div class = 'interactive' id = 'transfer'>
 				<p class = 'titles' id = 'transferText'> Pass it on </p>
 				<input id = 'transferInput' type="text" placeholder="Recipient's address goes here" ></input>
+				<button class = 'submit btn btn-4 btn-4c icon-arrow-right' id = 'transferButton'>Transfer</button>
+				<p class = 'input-errors' id = 'transfer-input-error'> You must input an address before passing the ledger! </p>
 			</div>
 
 		</div>
