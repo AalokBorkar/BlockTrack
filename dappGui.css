@@ -22,7 +22,7 @@ input{
 	margin-bottom: 5%;
 	font-size: 15px;
 	text-align: left;
-	width: 55%;
+	width: 58%;
 }
 	.submit{
 		position: relative;
@@ -42,7 +42,7 @@ input{
 .interactive{
 	color: black;
 	width: 550px;
-	background-color: rgba(246,76,114, .90);
+	background-color: rgba(181,211,231, .48);
 	border: solid 2px
 	border-color: blue;
 	padding: .3%;
@@ -62,6 +62,20 @@ input{
 .descriptor{
 	font-size: 15px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*BUTTON CSS*/
 
 .btn {
 	border: none;
