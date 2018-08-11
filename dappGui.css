@@ -1,11 +1,16 @@
 body{
 	text-align: center;
 	font-family: 'Crete Round', serif;
-	background-color: #2F2FA2;
+	background-color: rgba(181,211,231, .48);
 	color: white;
 }
 	#title{
-		font-size: 45px;
+		font-size: 38px;
+	}
+	#current{
+		font-size: 20px;
+		position: relative;
+		top: 15px;
 	}
 
 #interact{
@@ -40,14 +45,20 @@ input{
 }
 
 .interactive{
-	color: black;
+	font-size: 19px;
+	color: white;
 	width: 550px;
-	background-color: rgba(181,211,231, .48);
+	background-color: #2F2FA2;
 	border: solid 2px
 	border-color: blue;
 	padding: .3%;
 	padding-bottom: 1.5%;
+	padding-top: 1.5%;
 	margin: 3% auto;
+	border: 1px solid #999;
+    -webkit-box-shadow: 1px 3px 8px 0 #000000;
+    -moz-box-shadow: 1px 3px 8px 0 #000000;
+    box-shadow: 1px 3px 8px 0 #000000;
 }
 .input-errors{
 	color: #EE7600;
@@ -56,15 +67,25 @@ input{
 }
 
 .orange{
-  background-color : orange; 
+	background-color : orange; 
 }
 
 .descriptor{
 	font-size: 15px;
 }
 
-
-
+#banner{
+	color: white;
+	width: 100%
+	border: solid 2px
+	padding: .3%;
+	padding-bottom: 1.5%;
+	border: 1px solid #999;
+    -webkit-box-shadow: 1px 3px 8px 0 #000000;
+    -moz-box-shadow: 1px 3px 8px 0 #000000;
+    box-shadow: 1px 3px 8px 0 #000000;
+    background-color: #2F2FA2;
+}
 
 
 
@@ -164,5 +185,5 @@ input{
 }
 .icon-arrow-right:before {
 	content: "🡒";
-	top: -15px;
+	top: -12px;
 }
